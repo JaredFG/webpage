@@ -24,11 +24,9 @@ const Header = () => {
     >
       <a href="#home">Home</a>
       <a href="#about">Education</a>
-      <a href="#Work Experience">Work Experience</a>
-      <a href="#Major School Projects">Major School Projects</a>
       <a href="#Games Portfolio">Games Portfolio</a>
-      <a href="#Technical skills">Technical skills</a>
-      <a href="#Awards and leadership">Awards and leadership</a>
+      <a href="#Major School Projects">Major School Projects</a>
+      <a href="#Work Experience">Work Experience</a>
       <a href="#footer">Contact</a>
     </div>
   );
