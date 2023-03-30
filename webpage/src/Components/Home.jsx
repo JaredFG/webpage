@@ -29,12 +29,24 @@ const Home = ({ name, title }) => {
   return (
     <section id="home" className="dark2">
       <img className="background" src={mario} alt="" />
-      <div style={{ position: "absolute", top: "30%", left: "2rem", textShadow: "5px 5px black" }}>
-        <h1 style={{ fontWeight: "bold", paddingLeft: "3rem" }}>{name}</h1>
-        <h2 style={{ fontWeight: "bold", paddingLeft: "3rem" }}>{title}</h2>
+      <div
+        style={{
+          position: "absolute",
+          top: "30%",
+          textShadow: "5px 5px black",
+        }}
+      >
+        <div style={{ padding: "1rem" }}>
+          <h1 style={{ fontWeight: "bold" }}>{name}</h1>
+          <h2 style={{ fontWeight: "bold" }}>{title}</h2>
+        </div>
       </div>
       <div style={{ position: "absolute", bottom: "8rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+        <img
+          src={arrowSvg}
+          style={{ height: "3rem", width: "3rem" }}
+          alt={imageAltText}
+        />
       </div>
     </section>
   );
