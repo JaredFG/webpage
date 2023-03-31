@@ -53,22 +53,36 @@ const projectList = [
 const Portfolio = () => {
   return (
     <section className="dark" id="Work Experience">
-      <h2 style={{ fontWeight: "bold", fontSize: "3.5rem", color: "white" }}>Work Experience</h2>
+      <h2 style={{ fontWeight: "bold", fontSize: "3.5rem", color: "white" }}>
+        Work Experience
+      </h2>
       <img className="background" src={image} alt="" />
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
+      <div
+        style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}
+      >
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={fish}
-            style={{ height: "90%", width: "100%", objectFit: "cover", paddingLeft: "1rem" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              paddingLeft: "1rem",
+            }}
             alt={imageAltText}
           />
           <img
             src={fish2}
-            style={{ height: "90%", width: "100%", objectFit: "cover", paddingLeft: "1rem" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              paddingLeft: "1rem",
+            }}
             alt={imageAltText}
           />
         </div>
-        <div className="container">
+        <div className="container2">
           {projectList.map((project) => (
             <div
               style={{
@@ -78,7 +92,13 @@ const Portfolio = () => {
               key={project.title}
             >
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px", fontWeight: "bold", color: "white" }}>
+                <h3
+                  style={{
+                    flexBasis: "40px",
+                    fontWeight: "bold",
+                    color: "white",
+                  }}
+                >
                   {project.title}
                 </h3>
               </a>
