@@ -262,6 +262,21 @@ smallImg {
   flex-direction: row;
   padding-top: 3rem;
 }
+.arrowa {
+  position: absolute;
+  bottom: 8rem;
+  left: 50%;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.acomodo {
+  position: absolute;
+  top: 30%;
+  text-shadow: 5px 5px black;
+}
 
 @media only screen and (max-width: 768px) {
   .skills-list {
@@ -291,5 +306,23 @@ smallImg {
     flex-direction: column;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  h1 {
+    padding-bottom: 1rem;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .skills-list {
+    max-width: 400px;
+    margin: auto;
+    justify-content: space-around;
+  }
+  .acomodo {
+    top: 25%;
   }
 }
