@@ -74,12 +74,12 @@ const projectList = [
 const Portfolio2 = () => {
   return (
     <section className="dark" id="Major School Projects">
-      <h2 style={{ fontWeight: "bold", fontSize: "3.5rem", color: "white" }}>
-        Major School Projects
-      </h2>
+      <h2 className="tit">Major School Projects</h2>
       <img className="background" src={space} alt="" />
       <div style={{ paddingTop: "3rem", alignItems: "center" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center", alignItems: "center" }}></div>
+        <div
+          style={{ maxWidth: "40%", alignSelf: "center", alignItems: "center" }}
+        ></div>
         <div className="card">
           {projectList.map((project) => (
             <div
@@ -92,7 +92,13 @@ const Portfolio2 = () => {
               key={project.title}
             >
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px", marginBottom: "2rem", color: "white" }}>
+                <h3
+                  style={{
+                    flexBasis: "40px",
+                    marginBottom: "2rem",
+                    color: "white",
+                  }}
+                >
                   {project.title}
                 </h3>
               </a>

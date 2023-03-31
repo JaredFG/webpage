@@ -53,13 +53,9 @@ const projectList = [
 const Portfolio = () => {
   return (
     <section className="dark" id="Work Experience">
-      <h2 style={{ fontWeight: "bold", fontSize: "3.5rem", color: "white" }}>
-        Work Experience
-      </h2>
+      <h2 className="tit">Work Experience</h2>
       <img className="background" src={image} alt="" />
-      <div
-        style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}
-      >
+      <div className="divCont">
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={fish}

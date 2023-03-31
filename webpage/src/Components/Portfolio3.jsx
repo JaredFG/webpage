@@ -33,31 +33,36 @@ const projectList = [
     title: "Space Jumper",
 
     url: "https://jaredfg.itch.io/space-jump",
-    image: "https://img.itch.zone/aW1hZ2UvMTEyNzkyOC82NTMxNDUzLnBuZw==/original/z%2FrzT7.png",
+    image:
+      "https://img.itch.zone/aW1hZ2UvMTEyNzkyOC82NTMxNDUzLnBuZw==/original/z%2FrzT7.png",
   },
   {
     title: "Insect Destroyer",
 
     url: "https://jaredfg.itch.io/insect-destroyer",
-    image: "https://img.itch.zone/aW1hZ2UvMTEyMjIwMC82NDg4NzMxLnBuZw==/original/rEf7VA.png",
+    image:
+      "https://img.itch.zone/aW1hZ2UvMTEyMjIwMC82NDg4NzMxLnBuZw==/original/rEf7VA.png",
   },
   {
     title: "Spooky Jump",
 
     url: "https://jaredfg.itch.io/spooky-jump",
-    image: "https://img.itch.zone/aW1hZ2UvMTExMzQ4MC82NDMzMTA1LnBuZw==/original/nRezTv.png",
+    image:
+      "https://img.itch.zone/aW1hZ2UvMTExMzQ4MC82NDMzMTA1LnBuZw==/original/nRezTv.png",
   },
   {
     title: "Space Strikers",
 
     url: "https://jaredfg.itch.io/space-strikers",
-    image: "https://img.itch.zone/aW1hZ2UvMTA0NzUzMi81OTg3ODg5LnBuZw==/original/cuFLOj.png",
+    image:
+      "https://img.itch.zone/aW1hZ2UvMTA0NzUzMi81OTg3ODg5LnBuZw==/original/cuFLOj.png",
   },
   {
     title: "Coding to the Exit",
 
     url: "https://jaredfg.itch.io/coding-to-the-exit",
-    image: "https://img.itch.zone/aW1hZ2UvMTAyMDIwMC81ODE0OTU4LnBuZw==/original/%2FtASxh.png",
+    image:
+      "https://img.itch.zone/aW1hZ2UvMTAyMDIwMC81ODE0OTU4LnBuZw==/original/%2FtASxh.png",
   },
 ];
 
@@ -73,9 +78,7 @@ const Portfolio3 = () => {
       className="whiteDark"
       id="Games Portfolio"
     >
-      <h2 style={{ fontWeight: "bold", fontSize: "3.5rem", paddingTop: "2rem" }}>
-        Games Portfolio
-      </h2>
+      <h2 className="tit">Games Portfolio</h2>
       <img className="background" src={image} alt="" />
       <div
         style={{
@@ -85,10 +88,17 @@ const Portfolio3 = () => {
           justifyContent: "center",
         }}
       >
-        <div style={{ maxWidth: "70%", alignSelf: "center", color: "white" }}></div>
+        <div
+          style={{ maxWidth: "70%", alignSelf: "center", color: "white" }}
+        ></div>
         <div className="card">
           {projectList.map((project) => (
-            <a href={project.url} target="_blank" rel="noopener noreferrer" key={project.title}>
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={project.title}
+            >
               <div
                 style={{
                   alignItems: "center",

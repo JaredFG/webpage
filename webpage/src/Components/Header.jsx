@@ -2,22 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div
-      style={{
-        position: "fixed",
-        display: "flex",
-        justifyContent: "center",
-        flexWrap: "wrap", // agregamos flexWrap para envolver elementos
-        gap: "2rem",
-        background: "rgba(255,255,255,0.75)",
-        backdropFilter: "blur(10px)",
-        paddingTop: "1rem",
-        paddingBottom: "1rem",
-        top: 0,
-        width: "100vw",
-        zIndex: 10,
-      }}
-    >
+    <div className="ini">
       <a href="#home">Home</a>
       <a href="#about">Education</a>
       <a href="#Games Portfolio">Games Portfolio</a>
